@@ -1,0 +1,14 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dark SynthWave '84",
+    "files.autoSave": "off",
+    "explorer.compactFolders": false,
+    "editor.guides.bracketPairs": true,
+    "editor.bracketPairColorization.enabled": true,
+    "[json][jsonc][html][css][scss][javascript][javascriptreact][typescript][typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "html.autoCreateQuotes": false
+}
