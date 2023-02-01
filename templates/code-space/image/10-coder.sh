@@ -1,1 +1,1 @@
-alias code=code-server
+alias codes=code-server

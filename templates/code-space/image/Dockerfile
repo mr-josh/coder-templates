@@ -46,6 +46,7 @@ RUN chown -R coder. /tmp/build
 # Add some shell helpers
 ADD ./10-coder.sh /etc/profile.d/
 RUN chmod u=rw,g=r,o=r /etc/profile.d/10-coder.sh
+RUN chown root. /etc/profile.d/10-coder.sh
 
 USER coder
 
