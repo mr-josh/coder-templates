@@ -48,6 +48,11 @@ ADD ./10-coder.sh /etc/profile.d/
 RUN chmod u=rw,g=r,o=r /etc/profile.d/10-coder.sh
 RUN chown root. /etc/profile.d/10-coder.sh
 
+# Add setup script for easy code desktop setup
+ADD ./setup.sh /home/coder/
+RUN chmod u=rwx,g=rx,o=r /etc/profile.d/10-coder.sh
+RUN chown coder. /home/coder/setup.sh
+
 USER coder
 
 # Install coder server
