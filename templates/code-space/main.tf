@@ -45,6 +45,7 @@ resource "coder_agent" "main" {
     mkdir -p /home/coder/db
     wget https://github.com/pocketbase/pocketbase/releases/download/v0.11.3/pocketbase_0.11.3_linux_amd64.zip -O /home/coder/db/pocketbase.zip
     unzip /home/coder/db/pocketbase.zip -d /home/coder/db
+    rm /home/coder/db/pocketbase.zip
   fi
 
   if [ "$use_pocketbase" == "y" ]
