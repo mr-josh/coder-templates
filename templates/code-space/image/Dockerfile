@@ -57,7 +57,6 @@ RUN code-server --install-extension streetsidesoftware.code-spell-checker
 RUN code-server --install-extension exodiusstudios.comment-anchors
 RUN code-server --install-extension pkief.material-icon-theme
 RUN code-server --install-extension esbenp.prettier-vscode
-RUN code-server --install-extension hoovercj.vscode-power-mode
 RUN code-server --install-extension /tmp/build/aaronYoung.dark-synthwave-vscode-1.0.3.vsix
 
 # Configure settings
