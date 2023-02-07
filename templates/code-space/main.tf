@@ -145,7 +145,7 @@ resource "docker_container" "workspace" {
   # Use the docker gateway if the access URL is 127.0.0.1
   entrypoint = ["sh", "-c", replace(coder_agent.main.init_script, "/localhost|127\\.0\\.0\\.1/", "host.docker.internal")]
   env        = ["CODER_AGENT_TOKEN=${coder_agent.main.token}"]
-  memory     = 1000
+  memory     = 2000
   host {
     host = "host.docker.internal"
     ip   = "host-gateway"
